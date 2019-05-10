@@ -1,0 +1,41 @@
+nav {
+    background-color: white;
+}
+
+i {
+    color: #e65100 ;
+}
+
+a.brand-logo {
+    padding-left: 10px;
+    color: #e65100 ;
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-size: 25px;
+}
+
+ul.hide-on-med-and-down {
+    padding-left: 250px;
+}
+
+li.search {
+    margin-left: 100px;
+}
+
+#nav-title {
+    font-size: 20px;
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+}
+
+#menu-title {
+    font-size: 20px;
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+}
+
+#header-btn {
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+
+#header {
+    height: 40px;
+}
