@@ -1,0 +1,49 @@
+nav.bread {
+	background-color: #e0e0e0;
+	line-height: 30px;
+	height: 30px;
+}
+
+a.breadcrumb {
+	font-size: 15px;
+}
+
+.view-product {
+	margin-top: 10px;
+}
+
+div.card {
+	width:230px;
+	height: 330px;
+}
+
+#row {
+	margin-right:30px;
+	margin-bottom: 0px;
+}
+
+#price_fillter {
+	border: 1px solid #eeeeee;
+	font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+
+#price_id {
+	font-size: 18px; 
+	padding-left: 10px; 
+	line-height: 0px;
+}
+
+.price {
+	padding-left: 10px;
+}
+
+.view-product {
+	margin-top: 10px;
+}
+
+.card-image {
+	width: 300px;
+	height: 300px;
+}
