@@ -15,4 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .styles('resources/css/layout/footer.css', 'public/css/footer.css')
     .styles('resources/css/layout/header.css', 'public/css/header.css')
-    .styles('resources/css/template/materialize.css', 'public/css/materialize.css');
+    .styles('resources/css/template/materialize.css', 'public/css/materialize.css')
+	.styles('resources/css/product/product.css', 'public/css/product.css');
