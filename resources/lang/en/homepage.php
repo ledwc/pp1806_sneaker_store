@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'homepage' => 'HomePage',
+    'homepage' => 'Homepage',
     'price' => 'Price',
 ];
