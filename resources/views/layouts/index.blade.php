@@ -10,6 +10,7 @@
         <link href="{{ asset('css/header.css') }}" rel="stylesheet">
         <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
         <link href="{{ asset('css/product.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     </head>
     <body>
         @include('layouts.header')

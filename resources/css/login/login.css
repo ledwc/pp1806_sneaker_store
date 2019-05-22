@@ -1,0 +1,18 @@
+.acount-title {
+	font-weight: bold;
+	font-size: 20px;
+	color: #e65100;
+}
+
+.login-title {
+	font-size:18px;
+	color: #e65100;
+}
+
+#btn-login {
+	padding-left: 60px;
+}
+
+section {
+	margin-top: 20px;
+}
