@@ -15,54 +15,78 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<form class="col s12" method="POST" action="{{ route('login') }}">
+			<form class="col s6" method="POST" action="{{ route('login') }}">
+				@csrf
 				<div class="row">
-					<div class="col s6">
+					<div class="col s12">
 						<div class="acount-title">
 							<p>{{ __('auth.login')}}</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col s6">
+					<div class="col s12">
 						<div class="login-title">
 							<p>{{ __('auth.account')}}</p>
 						</div>
 					</div>
-					<div class="col s6">
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" name="email" type="email" class="validate">
+						<label for="email">Email</label>
+						@error('email')
+						<span class="deep-orange-text text-accent-3">
+							<strong>{{ $message }}</strong>
+						</span>
+						@enderror
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="password" name="password" type="password" class="validate">
+						<label for="password">Password</label>
+						@error('password')
+						<span class="deep-orange-text text-accent-3">
+							<strong>{{ $message }}</strong>
+						</span>
+						@enderror
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12" id="btn-login">
+						<button class="btn waves-effect waves-light" type="submit" name="action">{{ __('auth.login') }}</button>
+					</div>
+				</div>
+			</form>
+			<!-- <form class="col s6" method="POST" action="{{ route('login') }}">
+				@csrf
+				<div class="row">
+					<div class="col s12">
+						<div class="acount-title">
+							<p>{{ __('auth.login')}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
 						<div class="login-title">
 							<p>{{ __('auth.forgot')}}</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s6">
-						<input id="email" type="email" class="validate">
-						<label for="email">Email</label>
-					</div>
-					<div class="input-field col s6">
-						<input id="email" type="email" class="validate">
-						<label for="email">Email</label>
+					<div class="input-field col s12">
+						<input id="email-forget" name="email_forget" type="email" class="validate">
+						<label for="email-forget">Email</label>
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s6">
-						<input id="password" type="password" class="validate">
-						<label for="password">Password</label>
-					</div>
-					<div class="col s6">
+					<div class="col s12">
 						<button class="btn waves-effect waves-light" type="submit" name="action">{{ __('auth.forget') }}</button>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col offset-s1 s2" id="btn-login">
-						<button class="btn waves-effect waves-light" type="submit" name="action">{{ __('auth.login') }}</button>
-					</div>
-					<div class="col s2">
-						<button class="btn waves-effect waves-light" type="submit" name="action">{{ __('auth.register') }}</button>
-					</div>
-				</div>
-			</form>
+			</form> -->
 		</div>
 	</section>
 	@endsection
