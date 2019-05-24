@@ -15,7 +15,7 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<form class="col s12">
+			<form class="col s12" method="POST" action="{{ route('login') }}">
 				<div class="row">
 					<div class="col s6">
 						<div class="acount-title">
