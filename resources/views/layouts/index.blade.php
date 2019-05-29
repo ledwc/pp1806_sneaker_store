@@ -22,7 +22,5 @@
         <!-- Import jquery.min.js and materialize.min.js -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="{{ asset('js/materialize.js') }}"></script>
-        <script> $(document).ready(function(){
-                    $(".dropdown-trigger").dropdown();});</script>
     </body>
 </html>
