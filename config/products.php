@@ -1,6 +1,7 @@
 <?php 
 
 return [
-    'image_path' => 'image',
-    'available' => 1,
+
+	'image_path' => 'image',
+	'available' => 1,
 ];

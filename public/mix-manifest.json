@@ -1,6 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/js/del-product.js": "/js/del-product.js",
+    "/js/drop-down-menu.js": "/js/drop-down-menu.js",
     "/js/materialize.js": "/js/materialize.js",
     "/css/footer.css": "/css/footer.css",
     "/css/header.css": "/css/header.css",
