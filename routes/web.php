@@ -23,5 +23,6 @@ Route::get('products/{product}/edit', 'ProductsController@edit')->name('products
 Route::get('products/create', 'ProductsController@create')->name('products.create');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
 Route::put('products/{product}', 'ProductsController@update')->name('products.update');
+Route::delete('products/{product}', 'ProductsController@destroy')->name('products.destroy');
 Route::get('/products', 'ProductsController@index')->name('products.index');
 Route::post('/products', 'ProductsController@store')->name('products.store');

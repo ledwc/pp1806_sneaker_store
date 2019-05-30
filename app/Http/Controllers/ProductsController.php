@@ -75,6 +75,7 @@ class ProductsController extends Controller
             $imageFileType = $file->getClientOriginalExtension();
 
             if ($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg' && $imageFileType != 'gif') {
+
                 $result = [
                     'status' => false,
                     'msg' => __('product.upload_fial'),
@@ -159,6 +160,20 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
+        try {
+            $product = Product::find($id);
+            $product->delete();
+            $result = [
+                'status' => true,
+                'msg' => __('product.delete_success'),
+            ];
+        } catch (Exception $e) {
+            $result = [
+                'status' => false,
+                'msg' => __('product.delete_fail'),
+            ];
+        }
 
+        return response()->json($result);
     }
 }

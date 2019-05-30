@@ -13,6 +13,8 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .js('resources/js/materialize.js', 'public/js')
+   .js('resources/js/drop-down-menu.js', 'public/js')
+   .js('resources/js/del-product.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
    .styles('resources/css/layout/footer.css', 'public/css/footer.css')
    .styles('resources/css/layout/header.css', 'public/css/header.css')

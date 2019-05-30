@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Sneaker Store</title>
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,5 +23,6 @@
         <!-- Import jquery.min.js and materialize.min.js -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="{{ asset('js/materialize.js') }}"></script>
+        <script src="{{ asset('js/drop-down-menu.js') }}"></script>
     </body>
 </html>
