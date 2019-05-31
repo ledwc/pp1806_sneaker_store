@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/js/del-category.js": "/js/del-category.js",
     "/js/del-product.js": "/js/del-product.js",
     "/js/drop-down-menu.js": "/js/drop-down-menu.js",
     "/js/materialize.js": "/js/materialize.js",

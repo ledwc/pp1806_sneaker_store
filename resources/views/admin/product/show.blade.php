@@ -36,6 +36,8 @@
             </div>
         </div>
     </div>
+@endsection
 
-    <script src="{{ asset('js/del-product.js') }}"></script>
+@section('script')
+    <script type="text/javascript" src="{{ asset('js/del-product.js') }}"></script>
 @endsection
