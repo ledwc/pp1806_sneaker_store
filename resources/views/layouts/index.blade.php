@@ -24,5 +24,6 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="{{ asset('js/materialize.js') }}"></script>
         <script src="{{ asset('js/drop-down-menu.js') }}"></script>
+        @yield('script')
     </body>
 </html>

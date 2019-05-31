@@ -15,4 +15,5 @@ return [
 	'fail' => 'Not found',
 	'delete_fail' => 'Delete fail',
 	'delete_success' => 'Delete success',
+	'brand_name' => 'Brand name',
 ];

@@ -21,8 +21,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('products/{product}/edit', 'ProductsController@edit')->name('products.edit');
 Route::get('products/create', 'ProductsController@create')->name('products.create');
-Route::get('products/{product}', 'ProductsController@show')->name('products.show');
 Route::put('products/{product}', 'ProductsController@update')->name('products.update');
 Route::delete('products/{product}', 'ProductsController@destroy')->name('products.destroy');
 Route::get('/products', 'ProductsController@index')->name('products.index');
 Route::post('/products', 'ProductsController@store')->name('products.store');
+
+Route::get('categories/{category}/edit', 'CategoriesController@edit')->name('categories.edit');
+Route::put('categories/{category}', 'CategoriesController@update')->name('categories.update');
+Route::delete('categories/{category}', 'CategoriesController@destroy')->name('categories.destroy');
+Route::get('categories/create', 'CategoriesController@create')->name('categories.create');
+Route::post('/categories', 'CategoriesController@store')->name('categories.store');
+Route::get('/categories', 'CategoriesController@index')->name('categories.index');

@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreProductsPost;
-use App\Http\Requests\UpdateProductsPut;
+use App\Http\Requests\StoreProductPost;
+use App\Http\Requests\UpdateProductPut;
 
 class ProductsController extends Controller
 {
@@ -38,7 +38,7 @@ class ProductsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProductsPost $request)
+    public function store(StoreProductPost $request)
     {
         $data = $request->only([
             'product_name',
@@ -133,7 +133,7 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProductsPut $request, $id)
+    public function update(UpdateProductPut $request, $id)
     {
         $data = $request->only([
             'code',
