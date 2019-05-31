@@ -1,7 +1,6 @@
 <?php 
 
 return [
-
     'card_title' => ':name_brand',
     'price' => ':price',
     'in_stock' => 'Còn hàng',

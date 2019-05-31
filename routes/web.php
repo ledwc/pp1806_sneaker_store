@@ -32,3 +32,10 @@ Route::delete('categories/{category}', 'CategoriesController@destroy')->name('ca
 Route::get('categories/create', 'CategoriesController@create')->name('categories.create');
 Route::post('/categories', 'CategoriesController@store')->name('categories.store');
 Route::get('/categories', 'CategoriesController@index')->name('categories.index');
+
+Route::get('orders/{order}/edit', 'OrdersController@edit')->name('orders.edit');
+Route::put('orders/{order}', 'OrdersController@update')->name('orders.update');
+Route::delete('orders/{order}', 'OrdersController@destroy')->name('orders.destroy');
+Route::get('orders/create', 'OrdersController@create')->name('orders.create');
+Route::post('/orders', 'OrdersController@store')->name('orders.store');
+Route::get('/orders', 'OrdersController@index')->name('orders.index');

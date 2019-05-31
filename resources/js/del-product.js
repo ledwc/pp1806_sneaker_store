@@ -2,7 +2,7 @@ $('.del-product').click(function() {
     if (confirm('You are sure?')) {
         $.ajaxSetup({
             headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
 
@@ -13,12 +13,12 @@ $('.del-product').click(function() {
             url: url,
             type: 'DELETE',
             success: function(result) {
-                    if (result.status) {
-                        $('.row_' + productId).remove();
-                    } else {
-                        alert(result.msg);
-                    }
-                },
+                if (result.status) {
+                    $('.row_' + productId).remove();
+                } else {
+                    alert(result.msg);
+                }
+            },
             error: function() {
                 location.reload();
             }

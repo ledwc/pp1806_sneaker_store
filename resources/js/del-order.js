@@ -1,4 +1,4 @@
-$('.del-category').click(function() {
+$('.del-order').click(function() {
     if (confirm('You are sure?')) {
         $.ajaxSetup({
             headers: {
@@ -6,15 +6,15 @@ $('.del-category').click(function() {
             }
         });
 
-        var categoryId = $(this).data('category-id');
-        var url = '/categories/' + categoryId;
+        var orderId = $(this).data('order-id');
+        var url = '/orders/' + orderId;
 
         $.ajax({
             url: url,
             type: 'DELETE',
             success: function(result) {
                 if (result.status) {
-                    $('.row_' + categoryId).remove();
+                    $('.row_' + orderId).remove();
                 } else {
                     alert(result.msg);
                 }
@@ -23,5 +23,5 @@ $('.del-category').click(function() {
                 location.reload();
             }
         });
-    }       
+    }
 });

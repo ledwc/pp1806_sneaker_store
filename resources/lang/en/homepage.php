@@ -1,6 +1,6 @@
 <?php
 
-return [
+return [	
     'homepage' => 'Homepage',
     'price' => 'Price',
 ];
