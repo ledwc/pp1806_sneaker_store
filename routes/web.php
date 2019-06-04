@@ -39,3 +39,10 @@ Route::delete('orders/{order}', 'OrdersController@destroy')->name('orders.destro
 Route::get('orders/create', 'OrdersController@create')->name('orders.create');
 Route::post('/orders', 'OrdersController@store')->name('orders.store');
 Route::get('/orders', 'OrdersController@index')->name('orders.index');
+
+Route::get('sizes/{size}/edit', 'SizesController@edit')->name('sizes.edit');
+Route::put('sizes/{size}', 'SizesController@update')->name('sizes.update');
+Route::delete('sizes/{size}', 'SizesController@destroy')->name('sizes.destroy');
+Route::get('sizes/create', 'SizesController@create')->name('sizes.create');
+Route::post('/sizes', 'SizesController@store')->name('sizes.store');
+Route::get('/sizes', 'SizesController@index')->name('sizes.index');
