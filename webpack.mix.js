@@ -24,4 +24,5 @@ mix.js('resources/js/app.js', 'public/js')
    .styles('resources/css/layout/header.css', 'public/css/header.css')
    .styles('resources/css/template/materialize.css', 'public/css/materialize.css')
    .styles('resources/css/product/product.css', 'public/css/product.css')
-   .styles('resources/css/login/login.css', 'public/css/login.css');
+   .styles('resources/css/login/login.css', 'public/css/login.css')
+   .styles('resources/css/admin/main.css', 'public/css/main.css');

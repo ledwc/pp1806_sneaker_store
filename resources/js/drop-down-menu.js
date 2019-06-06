@@ -1,1 +1,1 @@
-$('.dropdown-trigge').dropdown();
+$('.dropdown-trigger').dropdown();
