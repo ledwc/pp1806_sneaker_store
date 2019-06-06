@@ -15,4 +15,12 @@ return [
 	'delete_fail' => 'Delete fail',
 	'delete_success' => 'Delete success',
 	'brand_name' => 'Brand name',
+	'id' => 'ID',
+	'product_name' => 'Product Name',
+	'code' => 'Code',
+	'price' => 'Price',
+	'status' => 'Status',
+	'image' => 'Image',
+	'categoty_id' => 'Category ID',
+
 ];

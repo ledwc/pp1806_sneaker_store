@@ -7,13 +7,13 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Product Name</th>
-                            <th>Code</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                            <th>Image</th>
-                            <th>Category ID</th>
+                            <th>{{ __('product.id') }}</th>
+                            <th>{{ __('product.product_name') }}</th>
+                            <th>{{ __('product.code') }}</th>
+                            <th>{{ __('product.price') }}</th>
+                            <th>{{ __('product.status') }}</th>
+                            <th>{{ __('product.image') }}</th>
+                            <th>{{ __('product.category_id)') }}</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -39,5 +39,5 @@
 @endsection
 
 @section('script')
-    <script type="text/javascript" src="{{ asset('js/del-product.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/del-product.js') }}"></script>
 @endsection
