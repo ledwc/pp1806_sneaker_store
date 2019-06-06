@@ -46,3 +46,6 @@ Route::delete('sizes/{size}', 'SizesController@destroy')->name('sizes.destroy');
 Route::get('sizes/create', 'SizesController@create')->name('sizes.create');
 Route::post('/sizes', 'SizesController@store')->name('sizes.store');
 Route::get('/sizes', 'SizesController@index')->name('sizes.index');
+
+Route::delete('users/{user}', 'UsersController@destroy')->name('users.destroy');
+Route::get('/users', 'UsersController@index')->name('users.index');
