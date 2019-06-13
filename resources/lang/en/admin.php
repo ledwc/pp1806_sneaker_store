@@ -9,4 +9,5 @@ return [
 	'sizes' => 'Sizes',
 	'create' => 'Create',
 	'show' => 'Show',
+	'logout' => 'Logout',
 ];

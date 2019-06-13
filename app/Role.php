@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class order extends Model
+class Role extends Model
 {
     protected $fillable = [
-        'total_price',
-        'user_id',
+        'name',
+        'permission',  
     ];
 }
