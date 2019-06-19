@@ -13,7 +13,8 @@
                             <th>{{ __('product.price') }}</th>
                             <th>{{ __('product.status') }}</th>
                             <th>{{ __('product.image') }}</th>
-                            <th>{{ __('product.category_id)') }}</th>
+                            <th>{{ __('product.category_id') }}</th>
+                            <th>{{ __('product.size') }}</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -27,6 +28,7 @@
                             <td>{{ $product->status == config('products.available') ? __('product.in_stock') : __('product.out_stock') }}</td>
                             <td><img src="{{ asset('/image/'. $product->image) }}" alt="" height="70px;" width="70px;"></td>
                             <td>{{ $product->category_id }}</td>
+                            <td>{{ $product->sizes->implode('size_name', ',') }}</td>
                             <td><a class="waves-effect waves-light btn-small" href="{{ route('products.edit', ['product' => $product->id]) }}"><i class="material-icons right">edit</i>{{ __('product.edit') }}</a>
                                 <a class="waves-effect waves-light btn-small brown del-product" data-product-id="{{ $product->id }}"><i class="material-icons right">delete</i>{{ __('product.delete') }}</a></td>
                         </tr>

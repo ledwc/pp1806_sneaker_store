@@ -60,7 +60,11 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        //
+        $categories = Category::all();
+        $category = Category::find($id);
+        $products = $category->products;
+
+        return view('products.product', compact('products', 'categories', 'category'));
     }
 
     /**

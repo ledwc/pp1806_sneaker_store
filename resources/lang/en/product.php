@@ -21,6 +21,8 @@ return [
 	'price' => 'Price',
 	'status' => 'Status',
 	'image' => 'Image',
-	'categoty_id' => 'Category ID',
-
+	'category_id' => 'Category ID',
+	'add_to_cart' => 'Add to cart',
+	'details' => 'Details'
+	'size' => 'Size',
 ];

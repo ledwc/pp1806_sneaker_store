@@ -19,7 +19,7 @@ class ProductsController extends Controller
     {
         $products = Product::all();
 
-        return view('admin.product.show', ['products' => $products]);
+        return view('admin.product.show', compact('products'));
     }
 
     /**

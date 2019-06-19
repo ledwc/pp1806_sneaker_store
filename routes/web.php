@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('homepage/home');
+	$categories = App\Category::all();
+
+    return view('homepage/home', compact('categories'));
 });
 
 Auth::routes();
@@ -58,3 +60,5 @@ Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'admin']], function
 		return view('admin.index');
 	});
 });
+
+Route::get('/categories/{category}', 'CategoriesController@show')->name('categories.show');

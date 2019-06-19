@@ -39,13 +39,8 @@
     </div> 
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Addidas</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Nike</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Vans</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Converse</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Fila</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Reebok</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Puma</a></li>
-        <li><a href="#!" class="orange-text text-darken-4" id="menu-title">Asic</a></li>
+        @foreach($categories as $category)
+        <li><a href="{{ route('categories.show', ['category' => $category->id]) }}" class="orange-text text-darken-4" id="menu-title">{{ $category->brand_name }}</a></li>
+        @endforeach
     </ul>
 </header>
