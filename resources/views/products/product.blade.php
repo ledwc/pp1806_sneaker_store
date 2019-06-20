@@ -86,7 +86,7 @@
                                                 <p>{{ $product->price }}</p>
                                             </div>
                                             <div class="card-action">
-                                                <a href="">{{ __('product.add_to_cart') }}</a>
+                                                <a href="{{ route('carts.addToCart', ['cart' => $product->id]) }}">{{ __('product.add_to_cart') }}</a>
                                                 <a href="">{{ __('product.details') }}</a>
                                             </div>
                                         </div>

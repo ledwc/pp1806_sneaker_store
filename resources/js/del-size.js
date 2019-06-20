@@ -7,7 +7,7 @@ $('.del-size').click(function() {
         });
 
         var sizeId = $(this).data('size-id');
-        var url = '/sizes/' + sizeId;
+        var url = '/admin/sizes/' + sizeId;
 
         $.ajax({
             url: url,

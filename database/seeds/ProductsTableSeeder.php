@@ -17,7 +17,7 @@ class ProductsTableSeeder extends Seeder
     		['product_name' => 'Vans Era', 'code' => 3, 'status' => 1, 'image' => '/vansera.jpeg', 'category_id' => 1, 'price' => 890000],
             ['product_name' => 'Adidas Superstar', 'code' => 1, 'status' => 1, 'image' => '/adidassuperstar.jpg', 'category_id' => 2, 'price' => 990000],
             ['product_name' => 'Adidas Stansmith', 'code' => 2, 'status' => 1, 'image' => '/adidasstansmith.jpeg', 'category_id' => 2, 'price' => 1200000],
-            ['product_name' => 'Adidas Ultraboot', 'code' => 3, 'status' => 1, 'image' => '/adidasultraboot.jpeg', 'category_id' => 2, 'price' => 20000000],
+            ['product_name' => 'Adidas Ultraboot', 'code' => 3, 'status' => 1, 'image' => '/adidasultraboot.jpeg', 'category_id' => 2, 'price' => 2000000],
             ['product_name' => 'Converse 1970s', 'code' => 1, 'status' => 1, 'image' => '/converse1970s.jpg', 'category_id' => 3, 'price' => 1600000],
             ['product_name' => 'Converse Classic', 'code' => 2, 'status' => 1, 'image' => '/converseclassic.png', 'category_id' => 3, 'price' => 890000],
             ['product_name' => 'Converse Jack Purcell', 'code' => 3, 'status' => 1, 'image' => '/conversejackpurcell.jpg', 'category_id' => 3, 'price' => 1200000],

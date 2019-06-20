@@ -17,7 +17,7 @@
                         @csrf
                     </form>
                 @endguest
-                <a href="" class="z-depth-0 waves-effect waves-light white lighten-5 btn orange-text text-darken-4" id="header-btn"><i class="material-icons left">shopping_cart</i></a>
+                <a href="{{ route('carts.shoppingCart') }}" class="z-depth-0 waves-effect waves-light white lighten-5 btn orange-text text-darken-4" id="header-btn"><i class="material-icons left">shopping_cart</i> <span class="new badge orange" style="margin-top:5px;">{{ Session::has('cart') ? Session::get('cart')->totalQuantity : '' }}</span></a>
             </div>
         </div>
     </div>

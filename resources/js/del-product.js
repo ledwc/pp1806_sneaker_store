@@ -7,7 +7,7 @@ $('.del-product').click(function() {
         });
 
         var productId = $(this).data('product-id');
-        var url = '/products/' + productId;
+        var url = '/admin/products/' + productId;
 
         $.ajax({
             url: url,

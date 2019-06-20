@@ -7,7 +7,7 @@ $('.del-user').click(function() {
         });
 
         var userId = $(this).data('user-id');
-        var url = '/users/' + userId;
+        var url = '/admin/users/' + userId;
 
         $.ajax({
             url: url,

@@ -23,6 +23,6 @@ return [
 	'image' => 'Image',
 	'category_id' => 'Category ID',
 	'add_to_cart' => 'Add to cart',
-	'details' => 'Details'
+	'details' => 'Details',
 	'size' => 'Size',
 ];

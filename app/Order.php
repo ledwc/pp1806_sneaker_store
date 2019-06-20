@@ -9,5 +9,10 @@ class order extends Model
     protected $fillable = [
         'total_price',
         'user_id',
+        'first_name',
+        'last_name',
+        'phone',
+        'address',
+        'total_quantity',
     ];
 }

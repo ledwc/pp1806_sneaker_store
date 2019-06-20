@@ -7,7 +7,7 @@ $('.del-order').click(function() {
         });
 
         var orderId = $(this).data('order-id');
-        var url = '/orders/' + orderId;
+        var url = '/admin/orders/' + orderId;
 
         $.ajax({
             url: url,

@@ -50,9 +50,6 @@ Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'admin']], function
 	Route::post('/sizes', 'SizesController@store')->name('sizes.store');
 	Route::get('/sizes', 'SizesController@index')->name('sizes.index');
 
-	Route::get('roles/create', 'RolesController@create')->name('roles.create');
-	Route::post('/roles', 'RolesController@store')->name('roles.store');
-
 	Route::delete('users/{user}', 'UsersController@destroy')->name('users.destroy');
 	Route::get('/users', 'UsersController@index')->name('users.index');	
 
@@ -62,3 +59,8 @@ Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'admin']], function
 });
 
 Route::get('/categories/{category}', 'CategoriesController@show')->name('categories.show');
+Route::get('/carts/{cart}', 'CartsController@addToCart')->name('carts.addToCart');
+Route::get('/delItem/{cart}', 'CartsController@delItem')->name('carts.delItem');
+Route::get('/shopping-carts', 'CartsController@shoppingCart')->name('carts.shoppingCart');
+Route::get('/carts', 'CartsController@index')->name('carts.index')->middleware('auth');
+Route::post('/carts', 'CartsController@store')->name('carts.store');
